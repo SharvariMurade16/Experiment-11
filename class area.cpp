@@ -1,4 +1,4 @@
-```javascript
+
 //sharvari murade
 //23070123088
 #include<iostream>
@@ -28,4 +28,4 @@ int main(){
     obj1.display();
     return 0;
 }
-,,,
+
