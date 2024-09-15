@@ -29,6 +29,7 @@ A copy constructor is a special constructor used to create a new object as a cop
 #### Destructor- 
 A destructor is a specialized function in a class responsible for cleaning up and releasing resources before an object is destroyed. It has the same name as the class but is prefixed with a tilde (~). Unlike constructors, a class can only have one destructor, which cannot accept parameters or be overloaded. Destructors are automatically called when an object’s lifetime ends, and they execute in the reverse order of construction. In the case of inheritance, the destructor of the derived class runs first, followed by the base class’s destructor.
 ### CODES-
+1)-
 ```javascript
 //sharvari murade
 //23070123088
@@ -66,16 +67,48 @@ int main() {
    return 0;
 }
 ```
+2)-
+```javascript
+//sharvari murade
+//23070123088
+#include <iostream>
+using namespace std;
+class SHARVARI
+{
+    public:
+    SHARVARI() {
+        cout<<"Hello SHARVARI"<<endl;
+    }
+};
+int main() {
+    SHARVARI obj; 
+    return 0;
+}
+```
+3)-
+```javascript
+//sharvari murade
+//23070123088
+#include <iostream>
+using namespace std;
+class Myclass
+{
+    public:
+    Myclass(int value) {
+        cout<<"Your entered value is: "<<value<<endl;
+    }
+};
 
+int main() {
+   int a;
+   cout<<"Enter a value: ";
+   cin>>a;
+   Myclass obj(a); 
 
-
-
-
-
-
-
-
-
+    return 0;
+}
+```
+4)-
 ```javascript
 //sharvari murade
 //23070123088
@@ -100,7 +133,72 @@ int main(){
     return 0;
           }
 ```
+5)-
+```javascript
+//sharvari murade
+//23070123088
+#include <iostream>
+using namespace std;
+class Myclass {
+    private:
+    int value1,value2;
+    public:
+    Myclass(int val1=0, int val2=0) {
+        value1=val1;
+        value2=val2;
+        cout<<"Constructor called! Your entered value is: "<<value1<<" and "<<value2 <<endl;
+    }   
+};
+int main() {
+   
+   Myclass obj1; 
+   Myclass obj2(7);
+   Myclass obj3(3,5);
+   return 0;
+}
+```
+6)-
+```javascript
+//sharvari murade
+//23070123088
+#include <iostream>
+using namespace std;
+class MyClass {
+public:
+~MyClass() {
+        cout << "Destructor called!" << endl;
+    }
+MyClass() {
+        cout << "Constructor called!" << endl;
+    }
+};
+int main() {
+    MyClass obj;  
 
+return 0;
+}
+```
 
+### OUTPUTS-
+
+1. <img width="494" alt="image" src="https://github.com/user-attachments/assets/d668e8df-e180-4bbf-a24d-57b90e29e6b9">
+
+2. <img width="331" alt="image" src="https://github.com/user-attachments/assets/1ec25334-6d36-4fc9-a37a-a904fcc1c6c2">
+
+3. <img width="366" alt="image" src="https://github.com/user-attachments/assets/cf3d4fcf-0adc-40a3-a9ff-ad1995f592e7">
+
+4. <img width="433" alt="image" src="https://github.com/user-attachments/assets/6d41b4b7-b7d3-45da-8071-c516b37616e3">
+
+5. <img width="471" alt="image" src="https://github.com/user-attachments/assets/7df34630-ee80-429b-a75a-1f6671970c45">
+
+6. <img width="304" alt="image" src="https://github.com/user-attachments/assets/dd9db786-1eba-4297-80f2-115830db1547">
+
+## CONCLUSION-
+Constructors ensure objects are initialized correctly, destructors manage resource cleanup, and copy constructors handle object copying, especially when dealing with dynamic resources. Mastery of these concepts is crucial for creating safe, efficient, and maintainable C++ code.
+Constructors set up new objects, either with default values or custom initialization.
+Destructors release resources when objects are destroyed.
+Copy Constructors make copies of objects, essential for managing dynamic resources.
+Default Constructor initializes objects with default values, either provided implicitly by the compiler or explicitly defined by the programmer.
+Parameterized Constructor allows initialization of objects with specific values at creation, providing flexibility and control over object setup.
 
 
