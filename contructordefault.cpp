@@ -2,14 +2,14 @@
 //23070123088
 #include <iostream>
 using namespace std;
-class Mansi
+class SHARVARI
 {
     public:
-    Mansi() {
-        cout<<"Hello Mansi"<<endl;
+    SHARVARI() {
+        cout<<"Hello SHARVARI"<<endl;
     }
 };
 int main() {
-    Mansi obj; 
+    SHARVARI obj; 
     return 0;
 }
