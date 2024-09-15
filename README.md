@@ -152,8 +152,8 @@ class Myclass {
 int main() {
    
    Myclass obj1; 
-   Myclass obj2(7);
-   Myclass obj3(3,5);
+   Myclass obj2(6);
+   Myclass obj3(1,8);
    return 0;
 }
 ```
@@ -189,7 +189,7 @@ return 0;
 
 4. <img width="433" alt="image" src="https://github.com/user-attachments/assets/6d41b4b7-b7d3-45da-8071-c516b37616e3">
 
-5. <img width="471" alt="image" src="https://github.com/user-attachments/assets/7df34630-ee80-429b-a75a-1f6671970c45">
+5. <img width="479" alt="image" src="https://github.com/user-attachments/assets/c2691438-96cf-44b1-9a5c-13436b1b67b3">
 
 6. <img width="304" alt="image" src="https://github.com/user-attachments/assets/dd9db786-1eba-4297-80f2-115830db1547">
 
